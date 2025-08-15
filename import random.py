@@ -1,6 +1,5 @@
 import random
 
-#step 1: Define intents, keywords and responses
 
 intents={}
      "greeting":{
@@ -22,7 +21,6 @@ intents={}
     }
 
 
-#step 2: Intent detection
 def detect_intent(user_input):
 
     #lowercase for matching
@@ -35,7 +33,6 @@ def detect_intent(user_input):
     return "unknown"
 
 
-#step 3: Response generation
 def get_response(user_input):
     intent=detect_ontent(user_input)
     if intent:
@@ -44,10 +41,9 @@ def get_response(user_input):
         return "I'm sorry, I don't understand. Can you elaborate?"
 
 
-#step 4: Main loop
 def chatbot():
     print("Welcome to the chatbot! Type 'quit' to exit.")
-    while True:
+     while True:
         user_input=input("You: ")
         if user_input.lower()=="quit":
             print("Chatbot: Goodbye! Have a great day!")
@@ -55,7 +51,6 @@ def chatbot():
         response=get_response(user_input)
         print(f"Chatbot: {response}")
 
-#step 5: Run the chatbot
 if __name__=="__main__":
-    chatbot()
+     chatbot()
             
