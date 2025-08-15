@@ -1,7 +1,7 @@
 import random
 
 
-intents={}
+intents={
      "greeting":{
         "keywords":["hello","hi","hey","greetings"],
         "responses":["Hello! How can I help you today?","Hi there! What can I do for you?","Hey! How's it going?"]
@@ -18,8 +18,12 @@ intents={}
         "keywords":["joke","funny","humor","laugh"],
         "responses":["why don't scientists trust atoms?","because they make up everything!",
                      "A man was walking down the street and suddenly he fell on his back"]
+    },
+    "goat": {
+        "keywords": ["who is the goat?"],
+        "responses": ["Cristiano Ronaldo is the Greatest of all time."]
     }
-
+}
 
 def detect_intent(user_input):
 
